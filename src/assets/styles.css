@@ -1,0 +1,27 @@
+body {
+    background: #fff;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 6rem;
+    color: #0069d9;
+    font-weight: 900;
+    text-shadow: 0rem 0.25rem 0.1875rem rgba(0,0,0,0.4),
+             0rem 0.5rem 0.8125rem rgba(0,0,0,0.1),
+             0rem 1.125rem 1.4375rem rgba(0,0,0,0.1);
+}
+
+h5 {
+    letter-spacing: 0.3rem;
+}
+
+
+
+.btn {
+    box-shadow: 0.25rem 0.25rem 0.3125rem 0rem rgba(0,0,0,0.75);
+    font-size: 2rem;
+    letter-spacing: 0.3rem;
+
+}
