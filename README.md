@@ -1,6 +1,8 @@
-# translatorapp
+# Word Translator
 
-> A simple translator app
+A simple word translator SPA built using Vue.js and the Yandex Translate API
+
+Supported Languages: Spanish, Chinese, French, Irish, and Russian
 
 ## Build Setup
 
@@ -19,3 +21,5 @@ npm run build --report
 ```
 
 For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+
+Based on [this tutorial](https://www.youtube.com/watch?v=DBADrF0C2ls).
