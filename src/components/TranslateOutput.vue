@@ -1,6 +1,5 @@
 <template>
-    <h2 class="display-1 mt-1" id="TranslateOutput" >{{translatedText}}</h2>
-    <h2 class="text-success">{{translatedText}}</h2>
+    <h2>{{translatedText}}</h2>
 </template>
 
 <script>

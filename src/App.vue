@@ -1,17 +1,9 @@
 <template>
   <div id="app" class="container">
-        <h1 class="pt-1 text-uppercase">Word Translator</h1>
-        <h5 class="lead pb-5">Powered by Vue.js & Yandex Translate API</h5>
+        <h1>Word Translator</h1>
+        <h5>Powered by Vue.js & Yandex Translate API</h5>
         <TranslateForm  v-on:formSubmit="translateText"></TranslateForm>
         <TranslateOutput v-text="translatedText"></TranslateOutput>
-    <div class="row mt-5 justify-content-center text-center">
-      <div class="col-md-9">
-        <h1 class="pt-3 text-uppercase">Word Translator</h1>
-        <h5 class="lead pb-5">Powered by Vue.js & Yandex Translate API</h5>
-        <TranslateForm  v-on:formSubmit="translateText"></TranslateForm>
-        <TranslateOutput v-text="translatedText"></TranslateOutput>
-      </div>
-    </div>
   </div>
 </template>
 
