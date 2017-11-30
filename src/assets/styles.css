@@ -5,12 +5,12 @@
 }
 
 body {
-    background: #303233;
+    background: #efefef;
     font-family: 'Roboto', sans-serif;
 }
 
 .container {
-    margin: 10vh 0 0 0;
+    margin: 3vh 0 0 0;
     padding: 0;
     display: flex;
     flex-direction: column;
@@ -19,24 +19,22 @@ body {
 
 h1 {
     font-family: 'Roboto Condensed', sans-serif;
-    font-size: 2rem;
-    color: #1E7F1E;
+    font-size: 2.5rem;
+    color: #228b22;
     font-weight: 900;
-    text-shadow: 0rem 0.25rem 0.1875rem rgba(0,0,0,0.4),
-             0rem 0.5rem 0.8125rem rgba(0,0,0,0.1),
-             0rem 1.125rem 1.4375rem rgba(0,0,0,0.1);
-    padding: 1rem 0;
+    padding: 1.33rem 0;
 }
 
 h5 {
     letter-spacing: 0.3rem;
     color: #228b22;
-    margin: 0 0 4rem;
+    margin: 4rem;
     font-size: 0.1875rem;
 }
 
 .btn {
     background: #228b22;
+    color: #fff;
     font-weight: 900;
     border: #228b22 0.2rem solid;
     border-radius: 1rem;
@@ -48,7 +46,7 @@ h5 {
 }
 
 .btn:hover, .btn:active, .btn:target {
-    background: #30B8C8;
+    background: #31ca31;
     opacity: 1;
 }
 
@@ -61,6 +59,7 @@ form input, form select {
     padding: 1rem;
     width: 70vw;
     margin: 0 0 2rem;
+    border: 0.0625rem solid #ccc;
     border-radius: 1rem;
 }
 
@@ -76,8 +75,8 @@ form select:focus {
     border-color: #129FEA;
 }
 
-#TranslateOutput {
-    color: #30B8C8;
+h2 {
+    color: #7CFC00;
     
 }
 
@@ -108,7 +107,7 @@ form select:focus {
     }
     
     h1 {
-        font-size: 6rem;
+        font-size: 7rem;
     }
     
     h5 {

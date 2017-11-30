@@ -1,9 +1,9 @@
 <template>
   <div id="app" class="container">
         <h1>Word Translator</h1>
-        <h5>Powered by Vue.js & Yandex Translate API</h5>
         <TranslateForm  v-on:formSubmit="translateText"></TranslateForm>
         <TranslateOutput v-text="translatedText"></TranslateOutput>
+        <h5>Powered by Vue.js & Yandex Translate API</h5>
   </div>
 </template>
 
