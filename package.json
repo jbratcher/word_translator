@@ -1,8 +1,8 @@
 {
-  "name": "translatorapp",
-  "version": "1.0.0",
-  "description": "A simple translator app",
-  "author": "Jeremy Bratcher <jeremybratcher@gmail.com>",
+  "name": "word_translator",
+  "version": "1.0.1",
+  "description": "Word translator app using Vue.js and Yandex Translate API",
+  "author": "Jeremy Bratcher",
   "private": true,
   "scripts": {
     "dev": "node build/dev-server.js",
