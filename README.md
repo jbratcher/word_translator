@@ -2,6 +2,8 @@
 
 A simple word translator SPA built using Vue.js and the Yandex Translate API
 
+Webpack dev environment
+
 Supported Languages: Spanish, Chinese, French, Irish, and Russian
 
 ## Build Setup
