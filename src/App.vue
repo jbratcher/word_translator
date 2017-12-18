@@ -4,6 +4,7 @@
         <TranslateForm  v-on:formSubmit="translateText"></TranslateForm>
         <TranslateOutput v-text="translatedText"></TranslateOutput>
         <h5>Powered by Vue.js & Yandex Translate API</h5>
+        <button id="about-btn">About</button>  
   </div>
 </template>
 
@@ -37,4 +38,4 @@ export default {
 
 </script>
 
-<style src="../src/assets/styles.css"  type="text/css"></style>
+<style src="../src/css/styles.css"  type="text/css"></style>

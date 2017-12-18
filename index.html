@@ -4,10 +4,33 @@
     <meta charset="utf-8">
     <title>Word Translator</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css" type="text/css" />
   </head>
   <body>
+    <div id="about" class="hide" >
+      <h2>About this app</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt ab aut inventore similique ipsa neque. Optio ipsa ducimus est! Velit odit ullam officia rem dolorum consectetur praesentium excepturi aliquam nihil assumenda amet quam, saepe quasi repellat inventore iure voluptas eos perferendis non ipsum nisi corporis molestiae. Et, nobis. Pariatur, eos.</p>
+    </div>
     <div id="app"></div>
     <!-- built files will be auto injected -->
+    <script
+    src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g="
+    crossorigin="anonymous">
+    </script>
+    <script>
+    
+      $(document).ready(function(){
+        
+        $("#about-btn").click(function(){
+            $("#about").toggle(1000);
+            $("input").toggle(1000);
+        });
+        
+      });
+      
+      var text = document.querySelector("#about-btn").textContent;
+      console.log(text);
+      
+    </script>
   </body>
 </html>

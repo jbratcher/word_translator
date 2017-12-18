@@ -37,6 +37,16 @@ h5 {
     font-size: 1rem;
 }
 
+/* Utility Classes */
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
 /* Form */
 
 form {
@@ -98,6 +108,32 @@ form select:focus {
     padding: 0.5rem 2rem;
     border-radius: 1rem;
 }
+
+/* About Button */
+
+#about-btn {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    background: #228b22;
+    font-size: 1rem;
+    color: #fff;
+}
+
+/* About */
+
+#about {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: radial-gradient(#F5FBE8 0%, rgba(165,201,86,1)  100%);
+}
+
+/* Media Queries */
 
 @media (min-width: 30rem) {
     

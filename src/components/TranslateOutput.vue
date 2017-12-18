@@ -13,5 +13,5 @@ export default {
 
 </script>
 
-<style src="../assets/styles.css"  type="text/css"></style>
+<style src="../css/styles.css"  type="text/css"></style>
 
