@@ -23,12 +23,10 @@
     <script>
     
       $(document).ready(function(){
-        
         $("#about-btn").click(function(){
-            $("#about").toggle(1000);
-            $("input").toggle(1000);
+            $("#about").toggleClass("hide");
+            $("input").toggleClass("hide");
         });
-        
       });
       
       $(document).ready(function() {
