@@ -4,13 +4,16 @@
     <meta charset="utf-8">
     <title>Word Translator</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed" rel="stylesheet">
+    <link rel="stylesheet" href="src/css/styles.css">
   </head>
   <body>
     <div id="about" class="hide" >
-      <h2>About this app</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt ab aut inventore similique ipsa neque. Optio ipsa ducimus est! Velit odit ullam officia rem dolorum consectetur praesentium excepturi aliquam nihil assumenda amet quam, saepe quasi repellat inventore iure voluptas eos perferendis non ipsum nisi corporis molestiae. Et, nobis. Pariatur, eos.</p>
+      <h2>About Word Translator</h2>
+      <p>Word Translator is a Vue SPA built using the Yandex Translate API.  It was born out of a tutorial created by Brad Traversy and continues to live on as a project to sharpen my skills wth a variety of tech including Node.js, Express.js, jQuery, CSS, and HTML.</p>
+      <a href="https://github.com/jbratcher/word_translator">Github project page</a>
     </div>
     <div id="app"></div>
+    <button id="about-btn">About</button>
     <!-- built files will be auto injected -->
     <script
     src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
@@ -28,9 +31,15 @@
         
       });
       
-      var text = document.querySelector("#about-btn").textContent;
-      console.log(text);
-      
+      $(document).ready(function() {
+        $("#about-btn").click(function(){
+          var btnTxt = $(this);
+          btnTxt.text() == "Home"
+              ? btnTxt.text("About")
+              : btnTxt.text("Home");
+        });
+      });
+    
     </script>
   </body>
 </html>

@@ -131,6 +131,26 @@ form select:focus {
     width: 100vw;
     height: 100vh;
     background: radial-gradient(#F5FBE8 0%, rgba(165,201,86,1)  100%);
+    color: #393;
+    text-align: center;
+}
+
+#about h2 {
+    font-size: 4rem;
+    padding: 2rem 4rem;
+}
+
+#about p {
+    font-size: 1.5rem;
+    padding: 0 20%;
+    text-align: left;
+}
+
+#about a {
+    display: block;
+    color: #363;
+    text-decoration: none;
+    margin-top: 2rem;
 }
 
 /* Media Queries */

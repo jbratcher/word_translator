@@ -4,7 +4,6 @@
         <TranslateForm  v-on:formSubmit="translateText"></TranslateForm>
         <TranslateOutput v-text="translatedText"></TranslateOutput>
         <h5>Powered by Vue.js & Yandex Translate API</h5>
-        <button id="about-btn">About</button>  
   </div>
 </template>
 
