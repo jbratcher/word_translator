@@ -14,7 +14,7 @@ body {
 }
 
 .container {
-    margin: 3vh 0 0 0;
+    margin: 0;
     padding: 0;
     display: flex;
     flex-direction: column;
@@ -133,6 +133,7 @@ form select:focus {
     background: radial-gradient(#F5FBE8 0%, rgba(165,201,86,1)  100%);
     color: #393;
     text-align: center;
+    z-index: 99;
 }
 
 #about h2 {
@@ -155,26 +156,114 @@ form select:focus {
 
 /* Media Queries */
 
-@media (min-width: 30rem) {
+@media (min-width: 10rem) {
     
-    form input, form select {
+    form input {
         width: 70vw;
+    }
+    
+    form select {
+        width: 50vw;
+        align-self: center;
     }
     
     h1 {
         font-size: 4rem;
     }
     
+    .btn {
+        font-size: 1rem;
+        width: 70vw;
+        align-self: center;
+    }
+    
+    .output {
+        font-size: 1rem;
+        margin: 1rem 2rem;
+    }
+    
+}
+
+@media (min-width: 30rem) {
+    
+    form input {
+        width: 50vw;
+    }
+    
+    form select {
+        width: 40vw;
+        align-self: center;
+    }
+    
+    h1 {
+        font-size: 4rem;
+    }
+    
+    .btn {
+        font-size: 1rem;
+        width: 40vw;
+        align-self: center;
+    }
+    
+    .output {
+        font-size: 2rem;
+        padding: 1rem 2rem;
+        margin: 1rem 2rem;
+    }
+    
 }
 
 @media (min-width: 50rem) {
+    
+    form input {
+        width: 50vw;
+    }
+    
+    form select {
+        width: 30vw;
+        align-self: center;
+    }
+    
+    h1 {
+        font-size: 7rem;
+    }
+    
+    .btn {
+        width: 30vw;
+        padding: 0.5rem;
+        align-self: center;
+    }
+    
+    .output {
+        font-size: 2rem;
+        margin: 1rem 2rem;
+    }
+    
+}
+
+@media (min-width: 70rem) {
     
     form input, form select {
         width: 50vw;
     }
     
+    form select {
+        width: 20vw;
+        align-self: center;
+    }
+    
     h1 {
         font-size: 7rem;
+    }
+    
+    .output {
+        font-size: 3rem;
+    }
+    
+    .btn {
+        font-size: 2rem;
+        width: 20vw;
+        align-self: center;
     }
     
 }

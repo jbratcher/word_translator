@@ -7,37 +7,7 @@
     <link rel="stylesheet" href="src/css/styles.css">
   </head>
   <body>
-    <div id="about" class="hide">
-      <h2>About Word Translator</h2>
-      <p>Word Translator is a Vue SPA built using the Yandex Translate API.  It was born out of a tutorial created by Brad Traversy and continues to live on as a project to sharpen my skills wth a variety of tech including Node.js, Express.js, jQuery, CSS, and HTML.</p>
-      <a href="https://github.com/jbratcher/word_translator">Github project page</a>
-    </div>
     <div id="app"></div>
-    <button id="about-btn">About</button>
     <!-- built files will be auto injected -->
-    <script
-    src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-    integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g="
-    crossorigin="anonymous">
-    </script>
-    <script>
-    
-      $(document).ready(function(){
-        $("#about-btn").click(function(){
-            $("#about").toggleClass("hide");
-            $("input").toggleClass("hide");
-        });
-      });
-      
-      $(document).ready(function() {
-        $("#about-btn").click(function(){
-          var btnTxt = $(this);
-          btnTxt.text() == "Home"
-              ? btnTxt.text("About")
-              : btnTxt.text("Home");
-        });
-      });
-    
-    </script>
   </body>
 </html>

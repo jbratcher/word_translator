@@ -1,26 +1,33 @@
 <template>
   <div id="app" class="container">
-        <h1>Word Translator</h1>
-        <TranslateForm  v-on:formSubmit="translateText"></TranslateForm>
-        <TranslateOutput v-text="translatedText"></TranslateOutput>
-        <h5>Powered by Vue.js & Yandex Translate API</h5>
+    <About></About>
+    <h1>Word Translator</h1>
+    <TranslateForm  v-on:formSubmit="translateText"></TranslateForm>
+    <TranslateOutput v-text="translatedText"></TranslateOutput>
+    <h5>Powered by Vue.js & Yandex Translate API</h5>
+    <AboutButton></AboutButton>
   </div>
 </template>
 
 <script>
 
+import About from "./components/About"
 import TranslateForm from "./components/TranslateForm"
 import TranslateOutput from "./components/TranslateOutput"
+import AboutButton from "./components/AboutButton"
 
 export default {
   name: "app",
   components: {
-    TranslateForm, TranslateOutput
+    About, TranslateForm, TranslateOutput, AboutButton
   },
-  data: function() {
-    return {
-      translatedText: ""
-    };
+  data: { 
+    function() {
+      return {
+        translatedText: ""
+      };
+    },
+    seen: false
   },
   created() {
     this.translatedText = "Translation";
@@ -33,7 +40,7 @@ export default {
     });
     }
   }
-}
+};
 
 </script>
 
