@@ -120,6 +120,7 @@ form select:focus {
     background: #228b22;
     font-size: 1rem;
     color: #fff;
+    z-index: 999;
 }
 
 /* About */
@@ -133,7 +134,7 @@ form select:focus {
     background: radial-gradient(#F5FBE8 0%, rgba(165,201,86,1)  100%);
     color: #393;
     text-align: center;
-    z-index: 99;
+    z-index: 2;
 }
 
 #about h2 {
@@ -197,6 +198,7 @@ form select:focus {
     
     h1 {
         font-size: 4rem;
+        padding: 1rem;
     }
     
     .btn {
@@ -253,7 +255,8 @@ form select:focus {
     }
     
     h1 {
-        font-size: 7rem;
+        font-size: 4rem;
+        margin-bottom: 2rem;
     }
     
     .output {

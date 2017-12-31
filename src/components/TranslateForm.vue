@@ -1,6 +1,6 @@
 <template>
         <form id="transForm" v-on:submit="formSubmit">
-            <input type="text" v-model="textToTranslate" placeholder="Enter word to translate">
+            <input type="text" v-model="textToTranslate" placeholder="Enter a word, phrase, or sentence...">
             <select v-model="language">
                 <option value="es">Spanish</option>
                 <option value="fr">French</option>
@@ -18,7 +18,8 @@ export default {
   name: 'translateForm',
   data() {
       return {
-          textToTranslate:""
+          textToTranslate:"",
+          language:""
       }
   },
   created() {
