@@ -27,11 +27,7 @@
   $("#about-btn").click(function(){
       $("#about").toggle();
       var txt = $("#about-btn").text();
-      if(txt === "About") {
-        $("#about-btn").text("Home");
-      } else if(txt === "Home") {
-        $("#about-btn").text("About");
-      }
+      txt === "About" ? $("#about-btn").text("Home") : $("#about-btn").text("About");
   });
     
   </script>
