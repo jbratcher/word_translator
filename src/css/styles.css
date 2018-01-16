@@ -157,9 +157,16 @@ form select:focus {
 
 #about a {
     display: block;
-    color: #363;
+    color: #606333;
     text-decoration: none;
     margin-top: 1em;
+    transition: 0.5s ease-in-out;
+}
+
+#about a:hover {
+    transform: scale(1.1);
+    color: #9fa454;
+    text-decoration: underline;
 }
 
 /* Media Queries */

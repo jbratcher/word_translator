@@ -8,8 +8,8 @@
 
 export default {
   name: 'translateOutput',
-  props: ['translatedText'],
-}
+  props: ['translatedText']
+};
 
 </script>
 

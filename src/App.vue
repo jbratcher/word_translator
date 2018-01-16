@@ -9,27 +9,28 @@
 
 <script>
 
-import TranslateForm from "./components/TranslateForm"
-import TranslateOutput from "./components/TranslateOutput"
+let url = "https://translate.yandex.net/api/v1.5/tr.json/translate?key=trnsl.1.1.20170927T013614Z.0398812bbce63b32.71a2a2d1a3dc29ad889789d7ca354e2439180293&lang=";
+
+import TranslateForm from "./components/TranslateForm";
+import TranslateOutput from "./components/TranslateOutput";
 
 export default {
   name: "app",
   components: {
     TranslateForm, TranslateOutput
   },
-  data: { 
+  data: 
     function() {
       return {
         translatedText: ""
       };
     },
-  },
   created() {
     this.translatedText = "Translation";
   },
   methods: {
     translateText: function(text, language) {
-      this.$http.get("https://translate.yandex.net/api/v1.5/tr.json/translate?key=trnsl.1.1.20170927T013614Z.0398812bbce63b32.71a2a2d1a3dc29ad889789d7ca354e2439180293&lang="+language+"&text=" + text)
+      this.$http.get(url+language+"&text=" + text)
       .then((response) => {
         this.translatedText = response.body.text[0];
       });

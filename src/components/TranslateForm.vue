@@ -20,18 +20,18 @@ export default {
       return {
           textToTranslate:"",
           language:""
-      }
+      };
   },
   created() {
-      this.language = "es"
+      this.language = "es";
   },
   methods: {
       formSubmit(e) {
-          this.$emit("formSubmit", this.textToTranslate, this.language)
+          this.$emit("formSubmit", this.textToTranslate, this.language);
           e.preventDefault();
       }
   }
-}
+};
 
 </script>
 
