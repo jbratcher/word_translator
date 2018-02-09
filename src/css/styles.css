@@ -11,7 +11,7 @@ body {
     font-family: 'Roboto', sans-serif;
     font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
     height: 100vh;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 .container {
@@ -40,12 +40,16 @@ h5 {
 
 /* Utility Classes */
 
-.hide {
-    display: none;
-}
-
 .show {
     display: block;
+    max-height: 100vh;
+    transition-duration: 1s;
+}
+
+.hide {
+    max-height: 0;
+    overflow: hidden;
+    transition-duration: 1s;
 }
 
 /* Form */
