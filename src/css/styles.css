@@ -175,7 +175,7 @@ form select:focus {
 
 /* Media Queries */
 
-@media (min-width: 30em) {
+@media (min-width: 30em) and (max-width: 50em) {
     
     h1 {
         font-size: 3em;
@@ -185,30 +185,47 @@ form select:focus {
         font-size: 1em;
     }
     
+    form select {
+        width: 30vw;
+    }
+    
     .btn {
         font-size: 1em;
-    }
-    
-}
-
-@media (min-width: 50em) {
-    
-    form input {
-        width: 50vw;
-    }
-    
-    form select {
-        width: 50vw;
-    }
-    
-    .btn {
-        width: 50vw;
+        width: 30vw;
         padding: 0.25em;
     }
     
     .output {
         font-size: 2em;
-        margin: 0.5em 1em;
+        margin: 0 1em 0.25em;
+    }
+    
+}
+
+@media (min-width: 50em) and (max-width: 80em) {
+    
+    h1 {
+        font-size: 3em;
+        padding: 0.25em;
+    }
+    
+    h5 {
+        font-size: 0.875em;
+    }
+    
+    form select {
+        width: 30vw;
+    }
+    
+    .btn {
+        font-size: 1em;
+        width: 30vw;
+        padding: 0.25em;
+    }
+    
+    .output {
+        font-size: 2em;
+        margin: 0 1em 0.25em;
     }
     
 }
