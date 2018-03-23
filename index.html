@@ -20,17 +20,20 @@
   
   
   <script>
-  
-  var aboutBtn = document.getElementById('about-btn');
-  
-  aboutBtn.addEventListener('click', () => {
-    toggleClasses(document.getElementById('about'), 'hide', 'show');
-    toggleClasses(document.getElementById('app'), 'hide', 'show');
-  });
-  
-  function toggleClasses(element, ...classNames) {
-    classNames.forEach(name => element.classList.toggle(name));
-  }
+    
+    const aboutBtn = document.getElementById('about-btn');
+    const about = document.getElementById('about');
+    const app = document.getElementById('app');
+    
+    function toggleClasses(element, ...classNames) {
+        classNames.forEach(name => element.classList.toggle(name));
+    }
+      
+    aboutBtn.addEventListener('click', () => {
+        toggleClasses(about, 'hide', 'show');
+        toggleClasses(app, 'hide', 'show');
+    });
+
     
   </script>
     
